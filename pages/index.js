@@ -1,7 +1,8 @@
 import React from 'react'
+// import ReactDOM from 'react-dom';
 import Head from 'next/head'
 import axios from 'axios';
-
+// import './index.css';
 export default class extends React.Component {
     static async getInitialProps () {
         const res = await axios.get('http://api.football-data.org/v1/competitions/426/leagueTable');
